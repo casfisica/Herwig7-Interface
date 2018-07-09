@@ -18,9 +18,9 @@ scram b -j 10
   <li><i>Herwig7Test_ConfigFile_GEN_SIM.py</i>: Uses Herwig7 interface to read in an external Herwig7 input file called TestConfig.in. Difference to other cmsRun files is that the Herwig7 config is not provided in the python code but as an external file</li>
   
   <li>Herwigpp_Herwig7interfaceTestProcess_cff_py_GEN_SIM.py: Uses the .  </li>
-    ```bash
-      cmsRun Herwigpp_Herwig7interfaceTestProcess_cff_py_GEN_SIM.py
-    ```
+  ```bash
+  cmsRun Herwigpp_Herwig7interfaceTestProcess_cff_py_GEN_SIM.py
+  ```
 
   
   <li><b><i>Herwig7_Matchbox_90X_ppToee_GEN_SIM.py</i></b>: Uses the old .</li>
