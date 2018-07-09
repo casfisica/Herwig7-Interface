@@ -14,7 +14,7 @@ scram b -j 10
 <par>For testing of the recently build interface you can run one of the following cmsRun files available in the GeneratorInterface/Herwig7Interface/test directory:</par>
 
 <!--DIR is a Tabulator-->
-<DIR>
+<BLOCKQUOTE>
 <!--li is listing-->
   <li><i>Herwig7Test_ConfigFile_GEN_SIM.py</i>: Uses Herwig7 interface to read in an external Herwig7 input file called TestConfig.in. Difference to other cmsRun files is that the Herwig7 config is not provided in the python code but as an external file</li>
   
@@ -30,4 +30,4 @@ scram b -j 10
   
   <li>TestConfig.in: Herwig7 inputfile used as a test config together with the Herwigpp_ConfigFile_cff_py_GEN_SIM.py cmsRun file</li>
   
-</DIR>
+</BLOCKQUOTE>
