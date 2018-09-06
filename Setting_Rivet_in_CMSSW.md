@@ -25,7 +25,7 @@ scram b -j8
 
 
 ```
-## Test of the Herwig7 interface:
+## Test :
 
 
 <par>directory:</par>
