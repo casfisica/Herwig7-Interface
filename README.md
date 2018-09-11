@@ -25,7 +25,7 @@ scram b -j 10
   cmsRun Herwigpp_Herwig7interfaceTestProcess_cff_py_GEN_SIM.py
 ```
 
-<li><b><i>Herwig7_Matchbox_90X_ppToee_GEN_SIM.py</i></b>: Uses the old .</li>
+<li><b><i>Herwig7_Matchbox_90X_ppToee_GEN_SIM.py</i></b>: Uses the old.</li>
 
 <li>LEP.in: Can be used to invoke Herwig7 standalone as a check via</li>
 
