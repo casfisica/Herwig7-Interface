@@ -33,3 +33,25 @@ scram b -j8
 <!--li is listing-->
 
 <li><i>Herw</i>: other cmsRun nal file</li>
+
+
+<par>EWK-10-012, Jet rates in W and Z production (Author: Lovedeep Saini, Anil Singh</par>
+
+```bash
+rivet −h
+rivet −−list−analyses // List precompiled analyses shipped with Rivet
+rivet −−show−analysis CMS 2015 I1310737 // Detailed info for particular analysis
+rivet −−show−analysis MC ZJETS MU
+rivet −−show−analysis ATLAS 2015 CONF 2015 041
+
+rivet −a ATLAS 2015 CONF 2015 041 −a MC ZJETS MU −H Output.yoda
+INPUTFILE
+
+rivet −a CMS 2015 I1310737 −H Output2.yoda −−ignore−beams INPUTFILE
+
+rivet−mkhtml −h
+rivet−mkhtml Output.yoda:’LegendLabel’ −−mc−errs
+
+```
+
+
