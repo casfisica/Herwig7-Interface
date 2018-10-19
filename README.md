@@ -3,8 +3,10 @@
 ## Installation instructions:
 ```bash
 export SCRAM_ARCH=slc6_amd64_gcc630
-cmsrel CMSSW_10_1_1
-cd CMSSW_10_1_1/src
+#cmsrel CMSSW_10_1_1
+#cd CMSSW_10_1_1/src
+cmsrel 10_3_0_pre4 
+cd 10_3_0_pre4/src
 cmsenv
 git cms-addpkg GeneratorInterface/Herwig7Interface
 scram b clean
