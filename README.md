@@ -6,8 +6,10 @@
 export SCRAM_ARCH=slc6_amd64_gcc700
 #cmsrel CMSSW_10_1_1
 #cd CMSSW_10_1_1/src
-cmsrel CMSSW_10_3_0_pre4 
-cd CMSSW_10_3_0_pre4/src
+#cmsrel CMSSW_10_3_0_pre4 
+#cd CMSSW_10_3_0_pre4/src
+cmsrel CMSSW_10_2_6
+cd CMSSW_10_2_6/src
 cmsenv
 git cms-addpkg GeneratorInterface/Herwig7Interface
 scram b clean
