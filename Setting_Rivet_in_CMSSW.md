@@ -9,6 +9,9 @@ cd CMSSW_10_1_1/src
 cmsenv
 
 git-cms-init
+#################################################
+#If is inside other CMSSW enviroment start here #
+#################################################
 git-cms-addpkg GeneratorInterface/RivetInterface
 git-cms-addpkg Configuration/Generator
 
