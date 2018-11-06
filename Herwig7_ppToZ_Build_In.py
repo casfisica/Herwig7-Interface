@@ -155,15 +155,7 @@ process.load('GeneratorInterface.RivetInterface.rivetAnalyzer_cfi')
 
 def customise(process):
         process.load('GeneratorInterface.RivetInterface.rivetAnalyzer_cfi')
-        #process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2011_I928289_Z')
-        #process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2011_I945498')
-	#process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2013_I1230812')
-        #process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2013_I1230812_EL')
-        #process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2013_I1230812_MU')
-        #process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2016_I1502620_Z ')
         process.rivetAnalyzer.AnalysisNames = cms.vstring('CMS_2015_I1310737','CMS_2013_I1209721','CMS_2012_I941555', 'CMS_2013_I1224539_ZJET','CMS_2013_I1256943','CMS_2013_I1258128') 
-#        process.rivetAnalyzer.AnalysisNames = cms.vstring('')
-#        process.rivetAnalyzer.AnalysisNames = cms.vstring('') 
 #	process.rivetAnalyzer.CrossSection = cms.double(9757000000)
         process.rivetAnalyzer.OutputFile = cms.string('Z+Jets.yoda')
         process.generation_step+=process.rivetAnalyzer
