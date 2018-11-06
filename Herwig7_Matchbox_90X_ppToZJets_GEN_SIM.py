@@ -165,6 +165,23 @@ from Configuration.DataProcessing.Utils import addMonitoring
 #call to customisation function addMonitoring imported from Configuration.DataProcessing.Utils
 process = addMonitoring(process)
 
+process.load('GeneratorInterface.RivetInterface.rivetAnalyzer_cfi')
+
+# Automatic addition of the customisation function from Configuration.GenProduction.rivet_customize                                                                                                        
+#from Configuration.GenProduction.rivet_customize import customise                                                                                                                                         
+
+def customise(process):
+        process.load('GeneratorInterface.RivetInterface.rivetAnalyzer_cfi')
+        process.rivetAnalyzer.AnalysisNames = cms.vstring('CMS_2015_I1310737','CMS_2013_I1209721','CMS_2012_I941555', 'CMS_2013_I1224539_ZJET','CMS_2013_I1256943','CMS_2013_I1258128') 
+#	process.rivetAnalyzer.CrossSection = cms.double(9757000000)
+        process.rivetAnalyzer.OutputFile = cms.string('Z+Jets.yoda')
+        process.generation_step+=process.rivetAnalyzer
+        process.schedule.remove(process.RAWSIMoutput_step)
+        return(process)
+#call to customisation function customise imported from Configuration.GenProduction.rivet_customize                                                                                                        
+process = customise(process)
+
+
 # End of customisation functions
 
 # Customisation from command line
