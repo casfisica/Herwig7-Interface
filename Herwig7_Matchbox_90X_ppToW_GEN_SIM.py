@@ -181,7 +181,7 @@ def customise(process):
         process.load('GeneratorInterface.RivetInterface.rivetAnalyzer_cfi')
         process.rivetAnalyzer.AnalysisNames = cms.vstring('ATLAS_2010_S8919674','ATLAS_2012_I1083318','ATLAS_2014_I1319490','CMS_2013_I1224539_WJET','CMS_2014_I1303894') 
 #	process.rivetAnalyzer.CrossSection = cms.double(9757000000)
-        process.rivetAnalyzer.OutputFile = cms.string('W+Jets_CMS_2013_I1209721.yoda')
+        process.rivetAnalyzer.OutputFile = cms.string('W+Jets.yoda')
         process.generation_step+=process.rivetAnalyzer
         process.schedule.remove(process.RAWSIMoutput_step)
         return(process)
